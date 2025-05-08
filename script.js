@@ -1,36 +1,26 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
-  color: #333;
-  text-align: center;
-  padding: 40px;
-}
+const countdownEl = document.getElementById("countdown");
+const eventTime = new Date("May 9, 2025 12:00:00 CST").getTime();
 
-.container {
-  background: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+const timer = setInterval(() => {
+  const now = new Date().getTime();
+  const gap = eventTime - now;
 
-.countdown {
-  font-size: 1.5em;
-  margin: 20px 0;
-  color: #cc0000;
-}
+  if (gap < 0) {
+    clearInterval(timer);
+    countdownEl.innerHTML = "🎉 It's Graduation Time!";
+    return;
+  }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
+  const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((gap / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((gap / (1000 * 60)) % 60);
+  const seconds = Math.floor((gap / 1000) % 60);
 
-a:hover {
-  text-decoration: underline;
-}
+  countdownEl.innerHTML = `
+    <strong>${days}</strong> Days 
+    <strong>${hours}</strong> Hours 
+    <strong>${minutes}</strong> Minutes 
+    <strong>${seconds}</strong> Seconds
+  `;
+}, 1000);
 
-.message {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
