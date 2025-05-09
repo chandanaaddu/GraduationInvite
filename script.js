@@ -23,4 +23,3 @@ const timer = setInterval(() => {
     <strong>${seconds}</strong> Seconds
   `;
 }, 1000);
-
