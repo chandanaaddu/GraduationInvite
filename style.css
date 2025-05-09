@@ -1,36 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
-  color: #333;
-  text-align: center;
-  padding: 40px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+.hero-bg {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  background: #fff;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
   padding: 30px;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  animation: fadeIn 1.2s ease-out;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-family: 'Pacifico', cursive;
+  color: #ffeaa7;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+h2 span {
+  font-weight: bold;
+  color: #ffeaa7;
+}
+
+h3 {
+  margin-top: 25px;
+  font-size: 1.2em;
+  color: #f8d0e4;
 }
 
 .countdown {
-  font-size: 1.5em;
-  margin: 20px 0;
-  color: #cc0000;
-}
-
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  font-size: 1.3em;
+  margin: 15px 0;
+  color: #ffdd59;
 }
 
 .message {
   font-size: 1.1em;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
+
+.btn {
+  display: inline-block;
+  background: #ff7675;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e17055;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
