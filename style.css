@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(135deg, #ffafbd, #ffc3a0, #a18cd1, #fbc2eb);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
@@ -23,6 +23,7 @@ body {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   border-radius: 20px;
+  border: 4px solid #ffeaa7; /* 🎉 Added border */
   padding: 30px;
   max-width: 650px;
   width: 100%;
@@ -32,14 +33,15 @@ body {
 }
 
 h1 {
-  font-size: 2.2em;
-  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  font-family: 'Dancing Script', cursive;
   color: #ffeaa7;
+  margin-bottom: 0.2em;
 }
 
 h2 {
   font-size: 1.4em;
-  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 span {
@@ -49,7 +51,8 @@ h2 span {
 
 h3 {
   margin-top: 25px;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-family: 'Dancing Script', cursive;
   color: #f8d0e4;
 }
 
@@ -82,7 +85,7 @@ h3 {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   margin-top: 10px;
@@ -114,5 +117,4 @@ h3 {
     transform: translateY(0);
   }
 }
-
 
