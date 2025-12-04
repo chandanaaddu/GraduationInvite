@@ -1,16 +1,17 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Carol Tracker 2025</title>
-  style.css
-</head>
-<body>
-  <h1>🎄 TLAG Carols - 2025 Tracker 🎶</h1>
-  <div id="container">
-    <img src="church.png" alt="Christmas Church" class="churchbrate the season with joy and music.</p>
+<div class="toolbar">
+  <h2>📋 Load Families</h2>
+  <textarea id="csvInput" placeholder="Paste CSV from your sheet here…"></textarea>
+  <div class="toolbar-row">
+    <button id="parseCsvBtn">Parse CSV ▶</button>
+    <button id="clearStatusesBtn">Clear Statuses</button>
+    <button id="downloadJsonBtn">Download JSON</button>
   </div>
-  script.js</script>
-</body>
-</html>
+  <p class="hint">
+    Expected columns (header names can vary): 
+    <code>S. No</code>, <code>Family Name</code>, <code>Address</code>, <code>Time Slot</code>, 
+    <code>Bible Verse</code>, <code>G‑Map Link</code>, <code>Date</code>
+  </p>
+</div>
 
+<div id="schedule"></div>
