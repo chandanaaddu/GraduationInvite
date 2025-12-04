@@ -1,17 +1,51 @@
 
-<div class="toolbar">
-  <h2>📋 Load Families</h2>
-  <textarea id="csvInput" placeholder="Paste CSV from your sheet here…"></textarea>
-  <div class="toolbar-row">
-    <button id="parseCsvBtn">Parse CSV ▶</button>
-    <button id="clearStatusesBtn">Clear Statuses</button>
-    <button id="downloadJsonBtn">Download JSON</button>
-  </div>
-  <p class="hint">
-    Expected columns (header names can vary): 
-    <code>S. No</code>, <code>Family Name</code>, <code>Address</code>, <code>Time Slot</code>, 
-    <code>Bible Verse</code>, <code>G‑Map Link</code>, <code>Date</code>
-  </p>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TLAG Carols Tracker – 2025</title>
+  <meta name="description" content="Live tracking for TLAG Christmas Carols with maps, verses, and statuses." />
+  <meta property="og:title" content="TLAG Carols – Live Tracker" />
+  <meta property="og:description" content="See schedule, maps, and live status for carols." />
+  <meta property="og:type" content="website" />
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Great+y=swap
+  styles.css
+  <!-- html2canvas for "Save as Image" -->
+  https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js</script>
+  app.js</script>
+</head>
+<body>
+  <div class="snow"></div>
 
-<div id="schedule"></div>
+  <header class="hero">
+    <div class="wrap">
+      <h1>TLAG – Carols 2025</h1>
+      <p class="subtitle">“Glory to God in the highest, and on earth peace…” – Luke 2:14</p>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search family, address, verse..." />
+        <input id="dateFilter" type="date" />
+        <button id="clearFilters" class="btn ghost">Clear</button>
+      </div>
+      <div class="legend">
+        <span class="badge upcoming">Upcoming</span>
+        <span class="badge live">Live</span>
+        <span class="badge completed">Completed</span>
+        <span class="badge skipped">Skipped</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="cards" class="cards"></section>
+    <p id="emptyState" class="empty hidden">No matches found. Try clearing filters.</p>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Made with ♥ for Christmas — TLAG Carols 2025</p>
+    <p><small>Last updated: <span id="lastUpdated">—</span></small></p>
+  </footer>
+</body>
+</html>
