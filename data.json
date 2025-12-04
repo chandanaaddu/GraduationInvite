@@ -1,0 +1,43 @@
+
+[
+  {
+    "date": "2025-12-05",
+    "family": "Jasper Uncle",
+    "address": "1750 FM423, Frisco, TX 75033",
+    "start": "18:00",
+    "end": "18:20",
+    "verseRef": "Isaiah 9:6",
+    "verseText": "For unto us a child is born...",
+    "status": ""
+  },
+  {
+    "date": "2025-12-05",
+    "family": "Vinod",
+    "address": "1690 FM 423 #2209, Frisco, TX 75033",
+    "start": "18:30",
+    "end": "18:50",
+    "verseRef": "Luke 2:10–11",
+    "verseText": "",
+    "status": ""
+  },
+  {
+    "date": "2025-12-06",
+    "family": "Sam Vijay",
+    "address": "Apt 1201, Old Hickory Sq, 8626 Hickory St, Frisco, TX 75034",
+    "start": "10:00",
+    "end": "10:20",
+    "verseRef": "Titus 3:4-6",
+    "verseText": "",
+    "status": ""
+  },
+  {
+    "date": "2025-12-12",
+    "family": "Mary Buela",
+    "address": "1669 Willow Dr, Prosper, TX 75078",
+    "start": "18:00",
+    "end": "18:20",
+    "verseRef": "Romans 15:13",
+    "verseText": "",
+    "status": "skipped"
+  }
+]
